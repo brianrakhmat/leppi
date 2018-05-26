@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include "koneksi.php";
+	include "../../koneksi.php";
 	$id_laptop=$_POST['id_laptop'];
 	$nama_laptop=$_POST['nama_laptop'];
     $jenis_laptop=$_POST['jenis_laptop'];
@@ -31,10 +31,10 @@
 	penyimpanan_B,ram_GB,ram,ram_B,jenis_processor,processor,processor_B,grafis_jenis,grafis,grafis_B) 
 	VALUE 
 	('$id_laptop', '$nama_laptop' , '$jenis_laptop','$tipe_laptop','$harga_rupiah','$harga','$harga_B', '$layar_inch','$layar', '$layar_B','$penyimpanan_GB','$penyimpanan',
-	'$penyimpanan_B','$ram_GB','$ram','$ram_B','$jenis_processor','$processor','$processor_B','$$grafis_jenis','$grafis','$grafis_B')");
+	'$penyimpanan_B','$ram_GB','$ram','$ram_B','$jenis_processor','$processor','$processor_B','$grafis_jenis','$grafis','$grafis_B')");
 	if ($query1) {
 		echo "<script>alert('Data berhasil ditambahkan');</script>";
-		echo "<script>location.href='index.php'</script>";
+		echo "<script>location.href='../index.php'</script>";
 	}else{
 		echo "<script>alert('Data gagal ditambahkan, silakan coba lagi!');</script>";
 		echo "<script>location.href='DataLaptop.php'</script>";

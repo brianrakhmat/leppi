@@ -153,7 +153,12 @@ if ($_SESSION['level']=='admin') {
 										<div class="form-group row">
 											<label for="" class="col-sm-3 col-form-label">ID Laptop</label>
 											<div class="col-sm-9">
-											<input type="text" class="form-control" name="id_laptop" placeholder="ID Laptop">
+												<?php function id_laptop($limit)
+												{
+													return substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, $limit);
+												} 
+												?>
+											<input type="text" class="form-control" name="id_laptop" placeholder="ID Laptop Anda" value="<?php echo id_laptop(3); ?>">
 											</div>
 										</div>
 										<div class="form-group row">
@@ -187,7 +192,7 @@ if ($_SESSION['level']=='admin') {
 											<label for="" class="col-sm-3 col-form-label">Kriteria Harga</label>
 											<div class="col-sm-9">
 											<select id="kriteria_harga_nilai" name="harga" class="form-control">
-												<option value="-">Maukan Nilai Kriteria</option>
+												<option value="-">Masukan Nilai Kriteria</option>
 												<?php
 												$query=mysql_query("select * from kriteria_harga");
 												$no=1;
@@ -231,7 +236,7 @@ if ($_SESSION['level']=='admin') {
 											<label for="" class="col-sm-3 col-form-label">Kriteria Layar</label>
 											<div class="col-sm-9">
 											<select id="kriteria_layar_nilai" name="layar" class="form-control">
-												<option value="-">Maukan Nilai Kriteria</option>
+												<option value="-">Masukan Nilai Kriteria</option>
 												<?php
 												$query=mysql_query("select * from kriteria_layar");
 												$no=1;
@@ -278,7 +283,7 @@ if ($_SESSION['level']=='admin') {
 											<label for="" class="col-sm-3 col-form-label">Kriteria Penyimpanan</label>
 											<div class="col-sm-9">
 											<select id="kriteria_penyimpanan_nilai" name="penyimpanan" class="form-control">
-												<option value="-">Maukan Nilai Kriteria</option>
+												<option value="-">Masukan Nilai Kriteria</option>
 												<?php
 												$query=mysql_query("select * from kriteria_penyimpanan");
 												$no=1;
@@ -327,7 +332,7 @@ if ($_SESSION['level']=='admin') {
 											<label for="" class="col-sm-3 col-form-label">Kriteria RAM</label>
 											<div class="col-sm-9">
 											<select id="kriteria_ram_nilai" name="ram" class="form-control">
-												<option value="-">Maukan Nilai Kriteria</option>
+												<option value="-">Masukan Nilai Kriteria</option>
 												<?php
 												$query=mysql_query("SELECT * from kriteria_ram");
 												$no=1;
@@ -376,7 +381,7 @@ if ($_SESSION['level']=='admin') {
 											<label for="" class="col-sm-3 col-form-label">Kriteria Processor</label>
 											<div class="col-sm-9">
 											<select id="kriteria_prosesor_nilai" name="processor" class="form-control">
-												<option value="-">Maukan Nilai Kriteria</option>
+												<option value="-">Masukan Nilai Kriteria</option>
 												<?php
 												$query=mysql_query("SELECT * from kriteria_prosesor");
 												$no=1;
@@ -424,7 +429,7 @@ if ($_SESSION['level']=='admin') {
 											<label for="" class="col-sm-3 col-form-label">Kriteria Gravis</label>
 											<div class="col-sm-9">
 											<select id="kriteria_grafis_nilai" name="grafis" class="form-control">
-												<option value="-">Maukan Nilai Kriteria</option>
+												<option value="-">Masukan Nilai Kriteria</option>
 												<?php
 												$query=mysql_query("SELECT * from kriteria_grafis");
 												$no=1;

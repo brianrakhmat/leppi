@@ -77,6 +77,7 @@ include('koneksi.php');
 							<div class="card">
 								<div class="card-content">
 									<table class="responsive-table">
+									
 											<thead>
 												<tr>
 													<th><center>No</center></th>
@@ -84,6 +85,7 @@ include('koneksi.php');
 													<th><center>Nama Laptop</center></th>
 													<th><center>Jenis Laptop</center></th>
 													<th><center>Tipe Laptop</center></th>
+													<th><center>Harga Laptop</center></th>
 													<th><center>Selengkapnya</center></th>
 												</tr>
 											</thead>
@@ -99,6 +101,7 @@ include('koneksi.php');
 													<td><center><?php echo $user['nama_laptop']?></center></td>
 													<td><center><?php echo $user['jenis_laptop']?></center></td>
 													<td><center><?php echo $user['tipe_laptop']?></center></td>
+													<td><center><?php echo $user['harga_rupiah']?></center></td>
 													<td><center><a class="waves-effect waves-light btn" href="detail.php?detail_id=<?php echo $user['id_laptop']?>"><i class="material-icons right">open_in_new</i>Selengkapnya</a>
 													</center></td>
 												</tr>

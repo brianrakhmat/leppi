@@ -1,8 +1,8 @@
 <?php
 	session_start();
-	include "koneksi.php";
+	include "../../koneksi.php";
 
-	$kode=$_GET['id_laptop'];
+	$kode=$_GET['id'];
 	$query=mysql_query("DELETE FROM datalaptop WHERE id_laptop='$kode'");
 	if ($query) {
 		echo "<script>alert('Data Laptop Berhasil dihapus');</script>";

@@ -87,11 +87,11 @@
                                                             <div class="col s4">
                                                                 <select required name="harga">
                                                                     <option value = "" disabled selected>Kriteria Harga</option>
-                                                                    <option value = "1">Sangat Rendah</option>
-                                                                    <option value = "2">Rendah</option>
-                                                                    <option value = "3">Cukup</option>
-                                                                    <option value = "4">Tinggi</option>
-                                                                    <option value = "5">Sangat Tinggi</option>
+                                                                    <option value = "4">Sangat Murah</option>
+                                                                    <option value = "3">Murah</option>
+                                                                    <option value = "2">Mahal</option>
+                                                                    <option value = "1">Sangat Mahal</option>
+                                                                    
                                                                 </select>
                                                             </div>
 
@@ -100,12 +100,11 @@
                                                             </div>
                                                             <div class="col s4">
                                                                 <select required name="layar">
-                                                                    <option value = "" disabled selected>Kriteria Layar</option>
-                                                                    <option value = "1">Sangat Kecil</option>
-                                                                    <option value = "2">Kecil</option>
-                                                                    <option value = "3">Sedang</option>
-                                                                    <option value = "4">Besar</option>
-                                                                    <option value = "5">Sangat Besar</option>
+                                                                    <option value = "" disabled selected>Kriteria Layar</option> 
+                                                                    <option value = "1">Kecil</option>
+                                                                    <option value = "2">Sedang</option>
+                                                                    <option value = "3">Besar</option>
+                                                                    <option value = "4">Sangat Besar</option>
                                                                 </select>
                                                             </div>
                                                        </div>
@@ -117,11 +116,11 @@
                                                             <div class="col s4">
                                                                 <select required name="penyimpanan">
                                                                     <option value = "" disabled selected>Kriteria Penyimpanan</option>
-                                                                    <option value = "1">Sangat Kecil</option>
-                                                                    <option value = "2">Kecil</option>
-                                                                    <option value = "3">Cukup</option>
-                                                                    <option value = "4">Besar</option>
-                                                                    <option value = "5">Sangat Besar</option>
+                                                                    
+                                                                    <option value = "1">Kecil</option>
+                                                                    <option value = "2">Sedang</option>
+                                                                    <option value = "3">Besar</option>
+                                                                    <option value = "4">Sangat Besar</option>
                                                                 </select>
                                                             </div>
 
@@ -131,11 +130,10 @@
                                                             <div class="col s4">
                                                                 <select required name="ram">
                                                                     <option value = "" disabled selected>Kriteria RAM</option>
-                                                                    <option value = "1">Sangat Kecil</option>
-                                                                    <option value = "2">Kecil</option>
-                                                                    <option value = "3">Sedang</option>
-                                                                    <option value = "4">Besar</option>
-                                                                    <option value = "5">Sangat Besar</option>
+                                                                    <option value = "1">Kecil</option>
+                                                                    <option value = "2">Sedang</option>
+                                                                    <option value = "3">Besar</option>
+                                                                    <option value = "4">Sangat Besar</option>
                                                                 </select>
                                                             </div>
                                                        </div>
@@ -165,7 +163,7 @@
                                                                     <option value = "2">AMD Radeon</option>
                                                                     <option value = "3">Nvidia Geforce</option>
                                                                     <option value = "4">MSI Gforce</option>
-                                                                    <option value = "5">MSI Gforce</option>
+                                                                   s
                                                                 </select>
                                                             </div>
                                                        </div>
